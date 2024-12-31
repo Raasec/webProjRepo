@@ -1,0 +1,67 @@
+#iplLogo {
+    height: 80px;
+    width: 200px;
+    margin-left: 120px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+html body {
+    background-color: #ffffffbb;
+}
+
+#Titulo {
+    font-family: 'Outfit', sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 56px;
+}
+
+.container {
+    display: flex; /* Exibe os elementos em linha */
+    align-items: flex-start; /* Alinha itens pelo topo */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    max-width: 1200px; /* Limita a largura máxima do layout */
+}
+
+.descricao {
+    text-align: left; /* Alinha o texto à esquerda */
+    line-height: 1.6; /* Melhora a legibilidade */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    font-family: 'Outfit', sans-serif; /* Define a fonte */
+    margin: 0; /* Remove margens ao redor do texto */
+    padding: 0; /* Remove o preenchimento ao redor do texto */
+    width: calc(100% - 520px); /* Ajusta a largura para considerar a imagem */
+}
+
+.imagem {
+    max-width: 500px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    margin-left: 20px; /* Espaço entre a imagem e o texto */
+}
+
+
+
+#linha1 {
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif; 
+    color: #000; 
+}
+
+#linha2 {
+    font-size: 18px;
+    font-weight: bold; 
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Outfit', sans-serif; 
+    color: #000; 
+}
