@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Escolha o Pais</title>
+  <meta name="viewport" content="width=device-width">
+  <!--<link rel="stylesheet" href="styles/styles.css"> -->
+  <link rel="stylesheet" href="styles/css_BS/bootstrap.min.css">
+</head>
+
+<body>
+
+  <h1 style="text-align: center; padding: 30px 0px"><b>Escolha o País</b></h1> <!-- O titulo do body-->
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-3 lista-Paises">
+    <!-- DIV dos Cards, row e os seus tamanhos dependente dos devices-->
+    <div class="col card-Pais">
+      <div class="card h-100">
+        <a href="#"> <!-- link para os detalhes do pais-->
+          <img src="img/bandeira-de-portugal.jpg" class="card-img-top" alt="Bandeira-Pais" id="imagem-Paises">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title"><span class="nome-Pais">Portugal</span></h4>
+          <p class="card-text"><b>População: </b><span class="populacao-pais">10305564</span></p>
+          <p class="card-text"><b>Região: </b><span class="regiao-pais">Europe</span></p>
+          <p class="card-text"><b>Capital: </b><span class="capital-pais">Lisbon</span></p>
+          <p class="card-text"><b>Idiomas: </b><span class="idiomas-pais">Portuguese</span></p>
+          <p class="card-text"><b>Moedas: </b><span class="moedas-pais">Euro</span></p>
+          <p class="card-text"><b>Localização: </b><span class="localização-pais">blica</span></p>
+          <button class="btn btn-primary btn-favoritos">Favorito</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/sript.js"></script>
+
+</body>
+
+</html>

@@ -12,7 +12,6 @@
 }
 
 html body {
-    background-color: #d6d5d5bb;
     font-family: 'Outfit';
 }
 
@@ -25,11 +24,11 @@ html body {
 .carousel-caption {
     position: relative;
     width: 100%;
-    top: 25%;
+    top: 30%;
     z-index: 1 !important;
 }
 
-.carousel-caption h5 {
+.carousel-caption h1 {
     font-size: 100px;
     letter-spacing: 4px;
     font-weight: bolder;
@@ -38,18 +37,18 @@ html body {
 }
 
 .carousel-caption p {
-    font-size: 1.5rem;
+    font-size: 25px;
     position: absolute;
-    margin-top: 8%;
+    margin-top: 6%;
     color: rgb(14, 14, 14);
 }
 
 .carousel-caption img {
-    position: fixed;
+    position: relative;
     width: 250px;
     height: 250px;
     transform: translateY(-18%);
-    margin-left: 40px;
+    margin-left: 25%;
 }
 
 #contactosButton {
@@ -61,4 +60,53 @@ html body {
 
 .navbar-light .navbar-nav .nav-link {
     margin: 10px;
+}
+
+.divPaises {
+    background-color: white;
+    height: 650px;
+}
+
+.divPaises h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin: 50px 0px 25px 0px;
+    text-align: center;
+}
+
+.divPaises p {
+    font-size: 16px;
+    margin-bottom: 2%;
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.lista-Paises .card-Pais {
+    margin-top: 35px;
+}
+
+.bannerMid {
+    background-image: url(https://wallpapercave.com/wp/wp6848917.jpg);
+    height: 400px;
+    background-position: center 30%;
+    background-size: cover;
+}
+
+.bannerMid h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    filter: drop-shadow(5px 5px 4px #000000);
+    padding-top: 50px;
+}
+
+.bannerMid p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 25px;
+    max-width: 1000px;
+    margin: auto;
 }

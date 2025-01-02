@@ -6,7 +6,7 @@
 }
 
 
-.cards-container {
+.cards-container-contactos {
     display: flex;
     justify-content: center;
     gap: 35px;
@@ -14,18 +14,20 @@
     flex-wrap: wrap;
 }
 
-.card {
+.card-contactos {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
     max-width: 300px;
     text-align: center;
     font-family: 'Outfit';
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
+    border: solid;
+    border-color: rgba(189, 189, 189, 0.400);
 }
 
 .title {
-    color: grey;
+    color: rgb(180, 180, 180);
     font-size: 18px;
 }
 
@@ -41,11 +43,12 @@
     font-size: 18px;
     border-radius: 4px;
     transition: background-color 0.4s, color 0.4s;
+    background-color: white;
 }
 
 .infoButton:hover {
-    background-color: rgb(27, 127, 221); 
-    color: rgb(0, 0, 0); 
-    outline-color: rgb(27, 127, 221); 
+    background-color: rgb(27, 127, 221);
+    color: rgb(26, 26, 26);
+    outline-color: rgb(27, 127, 221);
     font-weight: 450;
 }
