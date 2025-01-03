@@ -106,6 +106,14 @@
     resize:none;
 }
 
-#submit_button {
-    margin-right:50% !important;
+.hidden {
+    display: none;
+}
+
+#success_message {
+    color: green; /* Define a cor do texto */
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    background-color: transparent; /* Remove a barra de cor */
+    border: none; /* Remove possíveis bordas */
 }

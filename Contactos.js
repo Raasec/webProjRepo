@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact_form");
+    const successMessage = document.getElementById("success_message");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); 
+
+        successMessage.textContent = "A sua mensagem foi enviada com sucesso!";
+        successMessage.classList.remove("hidden");
+
+        form.reset();
+    });
+});
