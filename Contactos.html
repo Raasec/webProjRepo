@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="Contactos.js"></script> 
     <title>Contactos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/homepageStyles.css">
@@ -49,27 +50,65 @@
             <h1>André Santos</h1>
             <p class="title">Estudante</p>
             <p>Politécnico de Leiria</p>
-            <p><button class="infoButton">Mais Informações</button></p>
+            <p><button class="infoButton" onclick="showInfo('info-andre')">Mais Informações</button></p>
+            <div id="info-andre" class="hidden-info">
+                <p>Nome Completo: André Ventura Santos</p>
+                <p>Idade: 19 Anos</p>
+                <p>Nacionalidade: Portuguesa</p>
+            </div>
         </div>
-
         <div class="card">
             <img src="imgs/perfil.jpg" alt="Rodrigo" style="width:100%">
             <h1>Rodrigo Costa</h1>
             <p class="title">Estudante</p>
             <p>Politécnico de Leiria</p>
-            <p><button class="infoButton">Mais Informações</button></p>
+            <p><button class="infoButton" onclick="showInfo('info-rodrigo')">Mais Informações</button></p>
+            <div id="info-rodrigo" class="hidden-info">
+                <p>Nome Completo: Rodrigo Andrade da Costa</p>
+                <p>Idade: 21 Anos</p>
+                <p>Nacionalidade: Portuguesa</p>
+            </div>
         </div>
-
         <div class="card">
             <img src="imgs/perfil.jpg" alt="Roman" style="width:100%">
             <h1>Roman Cesar</h1>
             <p class="title">Estudante</p>
             <p>Politécnico de Leiria</p>
-            <p><button class="infoButton">Mais Informações</button></p>
+            <p><button class="infoButton" onclick="showInfo('info-roman')">Mais Informações</button></p>
+            <div id="info-roman" class="hidden-info">
+                <p>Nome Completo: Roman Filipovych Cesar</p>
+                <p>Idade: 18 Anos</p>
+                <p>Nacionalidade: Portuguesa</p>
+            </div>
         </div>
     </div>
 
 
+    <form id="contact_form" action="#" method="POST">
+        <div class="form-header">
+          Alguma dúvida? Contacte-nos
+        </div>
+        
+        <div class="row">
+          <label class="required" for="name">Nome Completo:</label><br />
+          <input id="name" class="input" name="name" type="text" size="30" /><br />
+        </div>
+        
+        <div class="row">
+          <label class="required" for="email">Seu Email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        </div>
+        
+        <div class="row">
+          <label class="required" for="message">Sua Mensagem:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        </div>
+        
+        <input id="submit_button" type="submit" value="Enviar email"/>
+      </form>
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
