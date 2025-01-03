@@ -71,6 +71,29 @@
         </div>
     </div>
 
+    <form id="contact_form" action="#" method="POST">
+        <div class="form-header">
+          Alguma dúvida? Contacte-nos
+        </div>
+        
+        <div class="row">
+          <label class="required" for="name">Nome Completo:</label><br />
+          <input id="name" class="input" name="name" type="text" size="30" /><br />
+        </div>
+        
+        <div class="row">
+          <label class="required" for="email">Seu Email:</label><br />
+          <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+        </div>
+        
+        <div class="row">
+          <label class="required" for="message">Sua Mensagem:</label><br />
+          <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+        </div>
+        
+        <input id="submit_button" type="submit" value="Enviar email"/>
+      </form>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
