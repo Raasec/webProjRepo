@@ -3,41 +3,95 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Escolha o Pais</title>
-  <meta name="viewport" content="width=device-width">
-  <!--<link rel="stylesheet" href="styles/styles.css"> -->
-  <link rel="stylesheet" href="styles/css_BS/bootstrap.min.css">
+  <title>Escolha o País</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/homepageStyles.css">
+  <link rel="stylesheet" href="css/escolhaPaises.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <img src="imgs/iplLogo.png" id="iplLogo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Homepage.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Países</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contactos.html" id="contactosButton">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  <h1 style="text-align: center; padding: 30px 0px"><b>Escolha o País</b></h1> <!-- O titulo do body-->
+  <main class="divPaises">
+    <h1>Escolha o País</h1>
+    <div class="container">
+      <div class="row">
+        <aside class="col-lg-3">
+          <div class="filtros">
+            <h4>Filtros</h4>
+            <div class="form-group">
+              <label for="search">Pesquisar</label>
+              <input type="text" id="search" class="form-control" placeholder="Procurar...">
+            </div>
+            <h5>Moedas</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="currency1">
+              <label class="form-check-label" for="currency1">Moeda 1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="currency2">
+              <label class="form-check-label" for="currency2">Moeda 2</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="currency3">
+              <label class="form-check-label" for="currency3">Moeda 3</label>
+            </div>
+          </div>
+        </aside>
 
-
-  <div class="row row-cols-1 row-cols-md-3 g-3 lista-Paises">
-    <!-- DIV dos Cards, row e os seus tamanhos dependente dos devices-->
-    <div class="col card-Pais">
-      <div class="card h-100">
-        <a href="#"> <!-- link para os detalhes do pais-->
-          <img src="img/bandeira-de-portugal.jpg" class="card-img-top" alt="Bandeira-Pais" id="imagem-Paises">
-        </a>
-        <div class="card-body">
-          <h4 class="card-title"><span class="nome-Pais">Portugal</span></h4>
-          <p class="card-text"><b>População: </b><span class="populacao-pais">10305564</span></p>
-          <p class="card-text"><b>Região: </b><span class="regiao-pais">Europe</span></p>
-          <p class="card-text"><b>Capital: </b><span class="capital-pais">Lisbon</span></p>
-          <p class="card-text"><b>Idiomas: </b><span class="idiomas-pais">Portuguese</span></p>
-          <p class="card-text"><b>Moedas: </b><span class="moedas-pais">Euro</span></p>
-          <p class="card-text"><b>Localização: </b><span class="localização-pais">blica</span></p>
-          <button class="btn btn-primary btn-favoritos">Favorito</button>
+        <div class="col card-Pais">
+          <div class="card h-100">
+            <a href="#"> <!-- card temporario, adicionar mais dinamicamente-->
+              <img src="img/bandeira-de-portugal.jpg" class="card-img-top" alt="Bandeira-Pais" id="imagem-Paises">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title"><span class="nome-Pais">Portugal</span></h4>
+              <p class="card-text"><b>População: </b><span class="populacao-pais">10305564</span></p>
+              <p class="card-text"><b>Região: </b><span class="regiao-pais">Europe</span></p>
+              <p class="card-text"><b>Capital: </b><span class="capital-pais">Lisbon</span></p>
+              <p class="card-text"><b>Idiomas: </b><span class="idiomas-pais">Portuguese</span></p>
+              <p class="card-text"><b>Moedas: </b><span class="moedas-pais">Euro</span></p>
+              <p class="card-text"><b>Localização: </b><span class="localização-pais">blica</span></p>
+              <button class="btn btn-primary btn-favoritos">Favorito</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script/sript.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/countriesPage.js"></script>
 </body>
 
 </html>
